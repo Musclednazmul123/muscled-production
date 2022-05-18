@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import Blog from 'views/HomePage/Blog';
 import FeaturesGallery from 'views/HomePage/FeaturesGallery'
 import Hero from 'views/HomePage/Hero'
 
@@ -8,6 +9,8 @@ function DigitalWorkoutPage() {
     <DigitalWorkoutPageContainer>
         <Hero />
         <FeaturesGallery />
+        
+        <Blog />
 
 
     </DigitalWorkoutPageContainer>

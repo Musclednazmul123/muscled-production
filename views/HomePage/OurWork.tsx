@@ -15,7 +15,7 @@ function OurWork() {
             <Card />
         </CardsContainer>
         
-        <OurWorkCTA>See More</OurWorkCTA>
+        <OurWorkButton>See More</OurWorkButton>
     </OurWorkContainer>
   )
 }
@@ -48,7 +48,7 @@ const CardsContainer = styled.div`
  
 `;
 
-const OurWorkCTA = styled.button`
+const OurWorkButton = styled.button`
     padding: 10px 30px;
     margin: 20px auto;
     border-radius: 5px;
