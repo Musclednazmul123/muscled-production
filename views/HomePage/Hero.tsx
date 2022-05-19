@@ -1,4 +1,5 @@
 import NextLink from 'next/link';
+import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import Button from 'components/Button';
 import ButtonGroup from 'components/ButtonGroup';
@@ -8,6 +9,7 @@ import OverTitle from 'components/OverTitle';
 import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
 import EmailSubmit from 'components/EmailSubmit';
+// import {TweenMax, Power3} from 'gsap'
 
 const heroData = {
 
@@ -35,11 +37,27 @@ const heroData = {
 export default function Hero() {
   const { setIsModalOpened } = useNewsletterModalContext();
 
+  // let heroTitle = useRef(null) 
+
+  // useEffect(() => {
+  //   console.log(heroTitle)
+  //   TweenMax.to(
+  //     heroTitle, 
+  //     .8,
+  //     {
+  //       opacity: 1, 
+  //       x: 20,
+  //       ease: Power3.easeInOut,
+  //       delay: .4
+  //     }
+  //   )
+  // }, [])
+
   return (
     <HeroWrapper>
       <Contents>
         <CustomOverTitle>{heroData.OverTitle}</CustomOverTitle>
-        <Heading>{heroData.MainTitle}</Heading>
+        <Heading >{heroData.MainTitle}</Heading>
         {/* <Description>
           A metaverse that hosts UI Design, E-commerce and App Development services. We dare you to challenge our creativity.
         </Description> */}
