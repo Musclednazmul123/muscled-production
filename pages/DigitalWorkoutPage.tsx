@@ -1,3 +1,4 @@
+import ServiceType from 'components/ServiceType';
 import React from 'react'
 import styled from 'styled-components';
 import Blog from 'views/HomePage/Blog';
@@ -9,7 +10,7 @@ function DigitalWorkoutPage() {
     <DigitalWorkoutPageContainer>
         <Hero />
         <FeaturesGallery />
-        
+        <ServiceType />
         <Blog />
 
 

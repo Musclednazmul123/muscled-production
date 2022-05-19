@@ -4,74 +4,76 @@ import styled from 'styled-components';
 
 const Services = [
     {
-        imageUrl: '/grid-icons/asset-1.svg',
+        imageUrl: '/grid-icons/asset-9.svg',
         title: 'Design',
-        reversed : "false",
         description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
         items: [
             {
-                icon: '/grid-icons/asset-1.svg',
-                itemtitle: "hello world",
-                itemdesc: "this is item desc",
+                icon: '/grid-icons/landing-page-icon.svg',
+                itemtitle: "Landing Page Design",
+                itemdesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris. ",
             },
             {
-                icon: '/grid-icons/asset-1.svg',
-                itemtitle: "hello world",
-                itemdesc: "this is item desc",
+                icon: '/grid-icons/icon-wireframe.svg',
+                itemtitle: "Website and App Wireframing",
+                itemdesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris",
             },
             {
-                icon: '/grid-icons/asset-1.svg',
-                itemtitle: "hello world",
-                itemdesc: "this is item desc",
+                icon: '/grid-icons/icon-ui.svg',
+                itemtitle: "UI / UX Design",
+                itemdesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris.",
+            },
+        ],
+    },
+    {
+        imageUrl: '/grid-icons/asset-3.svg',
+        title: 'E-Commerce',
+        description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris. Felis augue vitae vitae.',
+        items: [
+            {
+                icon: '/grid-icons/landing-page-icon.svg',
+                itemtitle: "Conversion Rate Optimization (CRO)",
+                itemdesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris. ",
+            },
+            {
+                icon: '/grid-icons/landing-page-icon.svg',
+                itemtitle: "Landing Page Design",
+                itemdesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris. ",
+            },
+            {
+                icon: '/grid-icons/icon-wireframe.svg',
+                itemtitle: "Website and App Wireframing",
+                itemdesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris",
+            },
+            {
+                icon: '/grid-icons/icon-ui.svg',
+                itemtitle: "UI / UX Design",
+                itemdesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris.",
             },
         ],
     },
     {
         imageUrl: '/grid-icons/asset-1.svg',
-        title: 'Design',
-        reversed : "false",
+        title: 'Web App Development',
         description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris. Felis augue vitae vitae.',
         items: [
             {
-                icon: '/grid-icons/asset-1.svg',
-                itemtitle: "hello world",
-                itemdesc: "this is item desc",
+                icon: '/grid-icons/landing-page-icon.svg',
+                itemtitle: "Landing Page Design",
+                itemdesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris. ",
             },
             {
-                icon: '/grid-icons/asset-1.svg',
-                itemtitle: "hello world",
-                itemdesc: "this is item desc",
+                icon: '/grid-icons/icon-wireframe.svg',
+                itemtitle: "Website and App Wireframing",
+                itemdesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris",
             },
             {
-                icon: '/grid-icons/asset-1.svg',
-                itemtitle: "hello world",
-                itemdesc: "this is item desc",
-            },
-        ],
-    },
-    {
-        imageUrl: '/grid-icons/asset-1.svg',
-        title: 'Design',
-        reversed : "false",
-        description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
-        items: [
-            {
-                icon: '/grid-icons/asset-1.svg',
-                itemtitle: "hello world",
-                itemdesc: "this is item desc",
-            },
-            {
-                icon: '/grid-icons/asset-1.svg',
-                itemtitle: "hello world",
-                itemdesc: "this is item desc",
-            },
-            {
-                icon: '/grid-icons/asset-1.svg',
-                itemtitle: "hello world",
-                itemdesc: "this is item desc",
+                icon: '/grid-icons/icon-ui.svg',
+                itemtitle: "UI / UX Design",
+                itemdesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris.",
             },
         ],
     },
@@ -82,7 +84,7 @@ export default function OurService() {
     return(
         <OurServiceContainer>
             <ServiceHead>
-                <H2>Our Services</H2>
+                <OurServiceTitle>Our Services</OurServiceTitle>
                 <ServiceDescription>
                     Keeping up with the changing needs of your customers is very critical to the success of your organization. You need an up-to-date solution that provides value. MUSCLED puts your business through digital workouts that align with modern and trendy practices.
                 </ServiceDescription>
@@ -92,6 +94,8 @@ export default function OurService() {
             imageUrl={singleServices.imageUrl} 
             title={singleServices.title} 
             reversed = { (index % 2 ==0)? true : false}
+
+            key={'singleServices-'+index.toString()}
             
             >
 
@@ -100,12 +104,12 @@ export default function OurService() {
                     {singleServices.description} 
 
                 </Description>
-                {singleServices.items.map((singleItem, index) => (
-                    <Itemscontainer>
+                {singleServices.items.map((singleItem, idx) => (
+                    <Itemscontainer key={'singleItems-'+idx.toString()}>
                     <img src={singleItem.icon} width="40" alt="Icon"/>
                     <ItemsInfo>
-                        <H3>{singleItem.itemtitle}</H3>
-                        <P>{singleItem.itemdesc}</P> 
+                        <ItemsInfoTitle>{singleItem.itemtitle}</ItemsInfoTitle>
+                        <ItemsInfoDescription>{singleItem.itemdesc}</ItemsInfoDescription> 
                     </ItemsInfo>
                     </Itemscontainer>
                 ))}
@@ -135,10 +139,10 @@ const OurServiceContainer = styled.p`
 
 const Container = styled.div`
   font-size: 1.8rem;
-  color: rgba(var(--textSecondary), 0.8);
+  
 `;
 
-const H3 = styled.h3`
+const ItemsInfoTitle = styled.h3`
     font-weight: 700;
     font-size: 20px;
 `;
@@ -161,7 +165,7 @@ const ItemsInfo = styled.div`
     gap: 10px;
 `;
 
-const P = styled.p`
+const ItemsInfoDescription = styled.p`
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -173,7 +177,7 @@ const ServiceHead = styled.div`
     padding: 0 2rem;
     
 `;
-const H2 = styled.h2`
+const OurServiceTitle = styled.h2`
     max-width: 70%;
     text-align: center;
     margin: auto;

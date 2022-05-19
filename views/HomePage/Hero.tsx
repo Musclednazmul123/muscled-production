@@ -9,26 +9,47 @@ import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
 import EmailSubmit from 'components/EmailSubmit';
 
+const heroData = {
+
+    OverTitle: 'Muscled Digital Agency',
+    MainTitle: 'We make companies Muscular in Digital World',
+    MainMedia: '',
+    Buttons: [
+      {
+        name: 'Sign Up For Beta Release',
+        Urlto: '',
+        transparent: false,
+
+      },
+      {
+        name: 'Unpuzzle vs. All',
+        Urlto: '',
+        transparent: true,
+
+      },
+    ],
+  }
+
+
+
 export default function Hero() {
   const { setIsModalOpened } = useNewsletterModalContext();
 
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>Muscled Digital Agency</CustomOverTitle>
-        <Heading>We make companies <Redtext>Muscular</Redtext> in Digital World</Heading>
+        <CustomOverTitle>{heroData.OverTitle}</CustomOverTitle>
+        <Heading>{heroData.MainTitle}</Heading>
         {/* <Description>
           A metaverse that hosts UI Design, E-commerce and App Development services. We dare you to challenge our creativity.
         </Description> */}
         <CustomButtonGroup>
-          <Button onClick={() => setIsModalOpened(true)}>
-          Sign Up For Beta Release  <span>&rarr;</span>
-          </Button>
-          <NextLink href="#whitepaper" passHref>
-            <Button transparent>
-            Unpuzzle vs. All  <span>&rarr;</span>
+          {heroData.Buttons.map((button, index) => (
+            <Button onClick={() => setIsModalOpened(true)} transparent = {button.transparent} >
+            {button.name}  <span>&rarr;</span>
             </Button>
-          </NextLink>
+          ))}
+          
           {/* <EmailSubmit /> */}
         </CustomButtonGroup>
       </Contents>

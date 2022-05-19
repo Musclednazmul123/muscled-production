@@ -60,7 +60,6 @@ const BlogSectionContent = styled.div`
 const BlogsectionButton = styled.button`
     margin: auto;
     padding: 10px 30px;
-    background-color: white;
     color: black;
     border-radius: 5px;
     border: 0px;

@@ -1,37 +1,28 @@
-import Card from 'components/Card'
-import React from 'react'
+import Card from 'components/Card';
+import React from 'react';
 import styled from 'styled-components';
 
-function OurWork() {
+const numbers = [1,2,3,4,5,6]
+
+export default function OurWork() {
   return (
-    <OurWorkContainer>
-        <OurWorkTitle>Our Work</OurWorkTitle>
-        <CardsContainer>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-        </CardsContainer>
-        
-        <OurWorkButton>See More</OurWorkButton>
-    </OurWorkContainer>
+    <div>
+        <OurWorkSection>
+            <OurWorkTitle>Our Work</OurWorkTitle>
+            <CardsContainer>
+                {numbers.map((number, index) =>
+                    <Card key={index.toString()} />
+                )}
+            </CardsContainer>
+            
+            <OurWorkButton>See More</OurWorkButton>
+        </OurWorkSection>
+
+    </div>
+    
   )
 }
 
-export default OurWork
-
-const OurWorkContainer = styled.div`
-    display: flex;
-    max-width: 130rem;
-    margin: 20px auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
- 
-`;
 
 const OurWorkTitle = styled.h2`
     Text-align: center;
@@ -49,10 +40,21 @@ const CardsContainer = styled.div`
 `;
 
 const OurWorkButton = styled.button`
-    padding: 10px 30px;
-    margin: 20px auto;
+    padding: 10px 20px;
+    max-width: 120px;
     border-radius: 5px;
     border: 0px;
+    font-size: 14px;
+    margin: auto;
+
+`;
+
+const OurWorkSection = styled.div`
+    display: flex !important;
+    flex-direction: column;
+    max-width: 130rem;
+    margin: 20px auto;
+    gap: 40px;
 `;
 
 
