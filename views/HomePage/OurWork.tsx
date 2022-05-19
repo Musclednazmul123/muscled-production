@@ -1,8 +1,44 @@
-import Card from 'components/Card';
 import React from 'react';
 import styled from 'styled-components';
 
-const numbers = [1,2,3,4,5,6]
+const works = [
+    {
+        workTitle:  "Ultricies id consectetur quis tellus nulla magna.",
+        workImg: "/grid-icons/asset-1.svg",
+        workCategory: "Web App Development",
+        workDate: "27th May, 2022",
+    },
+    {
+        workTitle:  "Ultricies id consectetur quis tellus nulla magna.",
+        workImg: "/grid-icons/asset-1.svg",
+        workCategory: "Web App Development",
+        workDate: "27th May, 2022",
+    },
+    {
+        workTitle:  "Ultricies id consectetur quis tellus nulla magna.",
+        workImg: "/grid-icons/asset-1.svg",
+        workCategory: "Web App Development",
+        workDate: "27th May, 2022",
+    },
+    {
+        workTitle:  "Ultricies id consectetur quis tellus nulla magna.",
+        workImg: "/grid-icons/asset-1.svg",
+        workCategory: "Web App Development",
+        workDate: "27th May, 2022",
+    },
+    {
+        workTitle:  "Ultricies id consectetur quis tellus nulla magna.",
+        workImg: "/grid-icons/asset-1.svg",
+        workCategory: "Web App Development",
+        workDate: "27th May, 2022",
+    },
+    {
+        workTitle:  "Ultricies id consectetur quis tellus nulla magna.",
+        workImg: "/grid-icons/asset-1.svg",
+        workCategory: "Web App Development",
+        workDate: "27th May, 2022",
+    },
+]
 
 export default function OurWork() {
   return (
@@ -10,8 +46,13 @@ export default function OurWork() {
         <OurWorkSection>
             <OurWorkTitle>Our Work</OurWorkTitle>
             <CardsContainer>
-                {numbers.map((number, index) =>
-                    <Card key={index.toString()} />
+                {works.map((work, index) =>
+                    <CardContainer key={index.toString()} >
+                        <img src={work.workImg} alt="card-img" />
+                        <CardTitle>{work.workTitle}</CardTitle>
+                        <CardCategory>{work.workCategory}</CardCategory>
+                        <CardDate>{work.workDate}</CardDate>
+                    </CardContainer>
                 )}
             </CardsContainer>
             
@@ -58,3 +99,33 @@ const OurWorkSection = styled.div`
 `;
 
 
+
+const CardContainer = styled.div`
+    display: flex;
+    max-width: 30%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+ 
+`;
+
+const CardTitle = styled.h3`
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+
+`;
+
+
+const CardCategory = styled.p`
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+
+`;
+
+const CardDate = styled.small`
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+`;

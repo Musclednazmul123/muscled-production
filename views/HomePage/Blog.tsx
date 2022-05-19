@@ -2,6 +2,36 @@ import BlogCard from 'components/BlogCard'
 import React from 'react'
 import styled from 'styled-components';
 
+const blogPost = [
+    {
+        subtitle: "UX Design",
+        title: "These Are The 10 Best Online Courses to Learn UX Design in 2022",
+        image: "/grid-icons/asset-2.svg",
+        profileimage: "/grid-icons/asset-2.svg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a, facilisi euismod egestas dignissim ullamcorper amet aliquet integer.  venenatis. Tellus in rhoncus dictumst venenatis massa feugiat[...]",
+        profilename: "John Doe",
+        profilesummary: "May 7, 2022 - 8 minutes read",
+    },
+    {
+        subtitle: "UX Design",
+        title: "These Are The 10 Best Online Courses to Learn UX Design in 2022",
+        image: "/grid-icons/asset-2.svg",
+        profileimage: "/grid-icons/asset-2.svg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a, facilisi euismod egestas dignissim ullamcorper amet aliquet integer.  venenatis. Tellus in rhoncus dictumst venenatis massa feugiat[...]",
+        profilename: "John Doe",
+        profilesummary: "May 7, 2022 - 8 minutes read",
+    },
+    {
+        subtitle: "UX Design",
+        title: "These Are The 10 Best Online Courses to Learn UX Design in 2022",
+        image: "/grid-icons/asset-2.svg",
+        profileimage: "/grid-icons/asset-2.svg",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a, facilisi euismod egestas dignissim ullamcorper amet aliquet integer.  venenatis. Tellus in rhoncus dictumst venenatis massa feugiat[...]",
+        profilename: "John Doe",
+        profilesummary: "May 7, 2022 - 8 minutes read",
+    },
+]
+
 function Blog() {
   return (
     <BlogContainer>
@@ -10,9 +40,10 @@ function Blog() {
             <BlogsectionSummary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, fringilla est sed vitae, nisi laoreet nunc, sed. Faucibus tempor consectetur lorem vulputate habitasse tristique neque mauris.</BlogsectionSummary>
         </BlogSectionHeading>
         <BlogSectionContent>
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
+            {blogPost.map((post, index) => (
+                <BlogCard key={index+"-blogpost"} post={post} />
+            ))}
+            
         </BlogSectionContent>
         
         <BlogsectionButton>See More</BlogsectionButton>
@@ -54,6 +85,7 @@ const BlogsectionSummary = styled.div`
 const BlogSectionContent = styled.div`
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 35px;
 
 `;

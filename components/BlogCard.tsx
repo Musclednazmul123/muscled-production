@@ -1,23 +1,23 @@
 import React from 'react'
 import styled from 'styled-components';
 
-function BlogCard() {
-    const BlogImg = '/grid-icons/asset-2.svg'
+function BlogCard(props: any) {
+    
   return (
     <BlogCardBody>
-        <BlogCardImg src={BlogImg}/>
+        <BlogCardImg src={props.post.image}/>
         <BlogCardInfo>
             <BlogCardHeading>
-                <BlogCardSubTitle>UX Design</BlogCardSubTitle>
-                <BlogCardTitle>These Are The 10 Best Online Courses to Learn UX Design in 2022</BlogCardTitle>
+                <BlogCardSubTitle>{props.post.subtitle}</BlogCardSubTitle>
+                <BlogCardTitle>{props.post.title}</BlogCardTitle>
             </BlogCardHeading>
             
-            <BlogCardSummary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a, facilisi euismod egestas dignissim ullamcorper amet aliquet integer.  venenatis. Tellus in rhoncus dictumst venenatis massa feugiat[...]</BlogCardSummary>
+            <BlogCardSummary>{props.post.description}</BlogCardSummary>
             <BlogCardProfileContainer>
-                <BlogCardProfileImg src={BlogImg}/>
+                <BlogCardProfileImg src={props.post.profileimage}/>
                 <BlogCardProfileInfo>
-                    <BlogCardProfileName>John Doe</BlogCardProfileName>
-                    <BlogCardProfileSummary>May 7, 2022 - 8 minutes read</BlogCardProfileSummary>
+                    <BlogCardProfileName>{props.post.profilename}</BlogCardProfileName>
+                    <BlogCardProfileSummary>{props.post.profilesummary}</BlogCardProfileSummary>
                 </BlogCardProfileInfo>
             </BlogCardProfileContainer>
         </BlogCardInfo>
