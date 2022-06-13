@@ -14,7 +14,7 @@
     "no-unused-vars": 0,
     "sort-imports": ["error", { "ignoreCase": true, "ignoreDeclarationSort": true ,
       "ignoreMemberSort": true,
-      "memberSyntaxSortOrder" : ["none"]
+      "memberSyntaxSortOrder" : ["none", "all", "multiple", "single"]
 
       }],
     
