@@ -1,8 +1,7 @@
-import styled from 'styled-components';
 import Page from 'components/Page';
-import { media } from 'utils/media';
 import FormSection from 'views/ContactPage/FormSection';
 import InformationSection from 'views/ContactPage/InformationSection';
+import { ContactContainer } from 'Styles/contact.style';
 
 export default function ContactPage() {
   return (
@@ -14,11 +13,3 @@ export default function ContactPage() {
     </Page>
   );
 }
-
-const ContactContainer = styled.div`
-  display: flex;
-
-  ${media('<=tablet')} {
-    flex-direction: column;
-  }
-`;

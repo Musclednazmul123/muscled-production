@@ -14,6 +14,7 @@ export type SingleArticle = {
   };
 };
 
+
 export type NonNullableChildren<T> = { [P in keyof T]: Required<NonNullable<T[P]>> };
 
 export type NonNullableChildrenDeep<T> = {

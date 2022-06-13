@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Page from 'components/Page';
 import FaqSection from 'views/PricingPage/FaqSection';
 import PricingTablesSection from 'views/PricingPage/PricingTablesSection';
+import { Wrapper } from 'Styles/pricing.style';
 
 export default function PricingPage() {
   return (
@@ -13,9 +14,3 @@ export default function PricingPage() {
     </Page>
   );
 }
-
-const Wrapper = styled.div`
-  & > :last-child {
-    margin-bottom: 15rem;
-  }
-`;

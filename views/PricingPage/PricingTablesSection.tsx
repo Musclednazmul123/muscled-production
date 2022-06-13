@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import AutofitGrid from 'components/AutofitGrid';
-import PricingCard from 'components/PricingCard';
-import SectionTitle from 'components/SectionTitle';
+import AutofitGrid from 'Styles/GlobalStyles/AutofitGrid';
+import PricingCard from 'components/Cards/PricingCard';
+import SectionTitle from 'Styles/SectionTitle';
+import { Wrapper } from 'Styles/pricingTables.style';
 
 export default function PricingTablesSection() {
   return (
@@ -43,9 +44,3 @@ export default function PricingTablesSection() {
     </Wrapper>
   );
 }
-
-const Wrapper = styled.div`
-  & > *:not(:first-child) {
-    margin-top: 8rem;
-  }
-`;

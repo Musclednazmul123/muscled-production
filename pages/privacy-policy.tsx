@@ -1,6 +1,6 @@
-import styled from 'styled-components';
 import Page from 'components/Page';
-import RichText from 'components/RichText';
+import RichText from 'Styles/RichText';
+import { PrivacyPolicyContainer } from 'Styles/privacyPolicy.style';
 
 export default function ContactPage() {
   return (
@@ -115,9 +115,3 @@ export default function ContactPage() {
     </Page>
   );
 }
-
-const PrivacyPolicyContainer = styled.div`
-  max-width: 90rem;
-  margin: auto;
-  overflow-x: auto;
-`;

@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import styled from 'styled-components';
-import Button from 'components/Button';
-import Input from 'components/Input';
+import Button from 'components/Buttons/Button';
+import Input from 'components/Elements/Input';
 import { media } from 'utils/media';
 import MailSentState from '../../components/MailSentState';
+import { InputGroup, Wrapper, Form, ErrorMessage, InputStack, Textarea } from 'Styles/formSection.style';
 
 interface EmailPayload {
   name: string;
@@ -78,53 +79,3 @@ export default function FormSection() {
     </Wrapper>
   );
 }
-
-const Wrapper = styled.div`
-  flex: 2;
-`;
-
-const Form = styled.form`
-  & > * {
-    margin-bottom: 2rem;
-  }
-`;
-
-const InputGroup = styled.div`
-  display: flex;
-  align-items: center;
-
-  & > *:first-child {
-    margin-right: 2rem;
-  }
-
-  & > * {
-    flex: 1;
-  }
-
-  ${media('<=tablet')} {
-    flex-direction: column;
-    & > *:first-child {
-      margin-right: 0rem;
-      margin-bottom: 2rem;
-    }
-  }
-`;
-
-const InputStack = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  & > *:not(:first-child) {
-    margin-top: 0.5rem;
-  }
-`;
-
-const ErrorMessage = styled.p`
-  color: rgb(var(--errorColor));
-  font-size: 1.5rem;
-`;
-
-const Textarea = styled(Input)`
-  width: 100%;
-  min-height: 20rem;
-`;
