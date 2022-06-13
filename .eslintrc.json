@@ -13,7 +13,9 @@
     "react/display-name": 0,
     "no-unused-vars": 0,
     "sort-imports": ["error", { "ignoreCase": true, "ignoreDeclarationSort": true ,
-      "ignoreMemberSort": true
+      "ignoreMemberSort": true,
+      "memberSyntaxSortOrder" : ["none"]
+
       }],
     
     "import/order": [
