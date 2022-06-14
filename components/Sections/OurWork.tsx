@@ -1,7 +1,7 @@
 import OurWorkCard from 'components/Cards/OurWorkCard';
 import { works } from 'Data/worksData';
 import React, { useEffect } from 'react';
-import { OurWorkSection, OurWorkTitle, CardsContainer, OurWorkButton } from 'Styles/ourWork.style';
+import { CardsContainer, OurWorkButton, OurWorkSection, OurWorkTitle } from 'Styles/ourWork.style';
 import { gsap } from 'gsap/dist/gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import { Container, Img, Title, Description, Info } from 'Styles/guideCard.style';
+import { Container, Description, Img, Info, Title } from 'Styles/guideCard.style';
 
 type PropsI = {
   id: string;

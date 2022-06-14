@@ -1,7 +1,7 @@
 import NextImage from 'next/image';
-import React, { PropsWithChildren, ReactNode, useEffect } from 'react';
-import { Wrapper, Image, Content, Child, Title } from 'Styles/basicSection.style';
-import { gsap } from 'gsap/dist/gsap';
+import React, { ReactNode, useEffect } from 'react';
+import { Child, Content, Image, Title, Wrapper } from 'Styles/basicSection.style';
+import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);

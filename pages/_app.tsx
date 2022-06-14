@@ -2,7 +2,6 @@ import 'swiper/css';
 import 'swiper/css/bundle';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
-
 import { EnvVars } from 'env';
 import { AppProps } from 'next/dist/shared/lib/router/router';
 import dynamic from 'next/dynamic';
@@ -10,17 +9,14 @@ import Head from 'next/head';
 import { ColorModeScript } from 'nextjs-color-mode';
 import React, { PropsWithChildren } from 'react';
 import { TinaEditProvider } from 'tinacms/dist/edit-state';
-
 import Footer from 'components/Sections/Footer';
 import { GlobalStyle } from 'Styles/GlobalStyles/GlobalStyles';
 import Navbar from 'components/Sections/Navbar';
 import NavigationDrawer from 'components/Drawer/NavigationDrawer';
 import NewsletterModal from 'components/Modals/NewsletterModal';
-import WaveCta from 'components/Buttons/WaveCta';
 import Script from 'next/script';
 import { NewsletterModalContextProvider, useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { NavItems } from 'types';
-import gsap from 'gsap';
 // import Header from 'views/HomePage/Header';
 
 const navItems: NavItems = [
@@ -77,13 +73,14 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Providers>
 
       <Script
+        id="my-script-functions"
         dangerouslySetInnerHTML={{
           __html: `window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
           ga('create', 'UA-117119829-1', 'auto');
           ga('send', 'pageview');`,
         }}
       />
-      <Script async src="https://www.google-analytics.com/analytics.js"></Script>
+      <Script id="my-script-analytics" async src="https://www.google-analytics.com/analytics.js"></Script>
     </>
   );
 }

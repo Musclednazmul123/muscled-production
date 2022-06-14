@@ -1,6 +1,6 @@
 import NextImage from 'next/image';
 import NextLink from 'next/link';
-import { ArticleCardWrapper, HoverEffectContainer, ImageContainer, Content, Title, Description } from 'Styles/articleCard.style';
+import { ArticleCardWrapper, Content, Description, HoverEffectContainer, ImageContainer, Title } from 'Styles/articleCard.style';
 
 export interface ArticleCardProps {
   title: string;

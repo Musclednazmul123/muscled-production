@@ -1,6 +1,6 @@
 import IconCard2 from 'components/Cards/IconCard2';
 import { plugins } from 'Data/pluginsData';
-import { Container, Title, IconsContainer, Section } from 'Styles/plugins.style';
+import { Container, IconsContainer, Section, Title } from 'Styles/plugins.style';
 
 export default function Plugins() {
   return (

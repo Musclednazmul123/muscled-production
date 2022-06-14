@@ -1,11 +1,9 @@
-import NextLink from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import Button from 'components/Buttons/Button';
 import HeroIllustration from 'components/Sections/Heros/HeroIllustation';
 import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
-import EmailSubmit from 'components/Modals/EmailSubmit';
 import * as heroAnimation from 'components/Animation/lf20_gtauehoe.json';
-import { HeroWrapper, Contents, CustomOverTitle, Heading, Description, CustomButtonGroup, ImageContainer } from 'Styles/mainHero.style';
+import { Contents, CustomButtonGroup, CustomOverTitle, Description, Heading, HeroWrapper, ImageContainer } from 'Styles/mainHero.style';
 import { gsap } from 'gsap/dist/gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 

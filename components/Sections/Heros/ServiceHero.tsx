@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Body, Container, Info, Media, Description, Background } from 'Styles/serviceHero.style';
+import { Background, Body, Container, Description, Info, Media } from 'Styles/serviceHero.style';
 import { gsap } from 'gsap/dist/gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 

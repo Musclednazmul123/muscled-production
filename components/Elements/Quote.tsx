@@ -1,5 +1,5 @@
 import React from 'react';
-import { Blockquote, Container, Caption } from 'Styles/quote.style';
+import { Blockquote, Caption, Container } from 'Styles/quote.style';
 
 interface QuoteProps {
   content: string;

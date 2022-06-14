@@ -1,4 +1,4 @@
-import { Container, SubTitle, Body } from 'Styles/blogCard2.style';
+import { Body, Container, SubTitle } from 'Styles/blogCard2.style';
 
 type PropsI = {
   title: string;

@@ -1,6 +1,6 @@
 import NextImage, { ImageProps } from 'next/image';
 import React from 'react';
-import { ImageWrapper, Caption, Wrapper } from 'Styles/articleImage.style';
+import { Caption, ImageWrapper, Wrapper } from 'Styles/articleImage.style';
 
 interface ArticleImageProps extends ImageProps {
   src: string;

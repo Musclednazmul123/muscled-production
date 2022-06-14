@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import OurWorkCard from 'components/Cards/OurWorkCard';
 import { range } from 'lodash';
 import { OurWorkTabs } from 'Data/ourWorkData';
@@ -35,15 +35,8 @@ export default function OurWorkPage() {
 
       <CardsContainer>
         {items.map((work, index) => (
-          <div className="our-work-card-container">
-            <OurWorkCard
-              key={work.id}
-              id={work.id}
-              image={work.workImg}
-              title={work.workTitle}
-              category={work.workCategory}
-              date={work.workDate}
-            />
+          <div className="our-work-card-container" key={work.id}>
+            <OurWorkCard id={work.id} image={work.workImg} title={work.workTitle} category={work.workCategory} date={work.workDate} />
           </div>
         ))}
       </CardsContainer>
@@ -56,10 +49,8 @@ export default function OurWorkPage() {
         </a>
 
         {pages.map((page, index) => (
-          <a href="#our-works-page">
-            <PageNum key={'our-work-paginate-' + index} onClick={() => setCurrentPage(page)}>
-              {page}
-            </PageNum>
+          <a href="#our-works-page" key={'our-work-paginate-' + index}>
+            <PageNum onClick={() => setCurrentPage(page)}>{page}</PageNum>
           </a>
         ))}
         <a href="#our-works-page">

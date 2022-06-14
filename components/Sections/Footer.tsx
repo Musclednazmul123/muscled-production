@@ -3,16 +3,16 @@ import { FacebookIcon, LinkedinIcon, TwitterIcon } from 'react-share';
 import Container from 'components/Elements/Container';
 import EmailSubmit from '../Modals/EmailSubmit';
 import {
-  ListContainer,
-  FooterContent,
-  FooterWrapper,
-  FooterNewsletter,
-  ShareBar,
   BottomBar,
   Copyright,
-  ListWrapper,
+  FooterContent,
+  FooterNewsletter,
+  FooterWrapper,
+  ListContainer,
   ListHeader,
   ListItemWrapper,
+  ListWrapper,
+  ShareBar,
 } from 'Styles/footer.style';
 
 type SingleFooterListItem = { title: string; href: string };

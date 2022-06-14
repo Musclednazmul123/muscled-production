@@ -1,15 +1,8 @@
 import { Container } from 'Styles/cro.style';
 import ServiceHero from 'components/Sections/Heros/ServiceHero';
-import Banner2 from 'components/Sections/Banners/Banner2';
-import FigmaTools from 'components/Sections/FigmaTools';
 import Newsletter from 'components/Sections/Newsletter';
-import OurTechnology from 'components/Sections/OurTechnology';
-import PackageSection from 'components/Sections/PackageSection';
 import Slider from 'components/Sections/Slider';
-import Worked from 'components/Sections/Worked';
-import { iconData, FeaturesData } from 'Data/EcommercePageData';
 import { heroData } from 'Data/quickPrototypeData';
-import FeaturesGallery from 'components/Sections/FeaturesGallery';
 import Testimonials from 'components/Sections/Testimonials';
 import Partners from 'components/Sections/Partners';
 import Banner3 from 'components/Sections/Banners/Banner3';

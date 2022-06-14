@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Item, Container, Title } from 'Styles/SideBarCatagory.style';
+import { Container, Title } from 'Styles/SideBarCatagory.style';
 
 type PropsI = {
   title: string;

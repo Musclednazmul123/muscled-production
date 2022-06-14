@@ -64,7 +64,7 @@ export default function BlogDetailsPage() {
         <BlogHero title={blog.title} image={blog.image} breadcromb={breadcromb} />
         <div className="Content">
           <div className="left-side-bar">
-            <BlogContent data={blog.details} tag={blog.details} />
+            <BlogContent data={blog.details} />
           </div>
 
           <div className="right-side-bar">

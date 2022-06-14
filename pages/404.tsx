@@ -1,7 +1,6 @@
-import styled from 'styled-components';
 import Container from 'components/Elements/Container';
 import NotFoundIllustration from 'components/Elements/NotFoundIllustration';
-import { ImageContainer, Title, Description, Wrapper } from 'Styles/404.style';
+import { Description, ImageContainer, Title, Wrapper } from 'Styles/404.style';
 
 export default function NotFoundPage() {
   return (

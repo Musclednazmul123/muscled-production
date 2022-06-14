@@ -1,9 +1,8 @@
 import Highlight, { defaultProps, Language } from 'prism-react-renderer';
 import React from 'react';
-import styled from 'styled-components';
 import ClientOnly from 'components/ClientOnly';
 import { useClipboard } from 'hooks/useClipboard';
-import { CopyButton, CodeWrapper, Pre, Line, LineNo, LineContent, Caption } from 'Styles/code.style';
+import { Caption, CodeWrapper, CopyButton, Line, LineContent, LineNo, Pre } from 'Styles/code.style';
 
 export interface CodeProps {
   code: string;

@@ -1,6 +1,6 @@
 import BlogCard from 'components/Cards/BlogCard';
 import * as React from 'react';
-import { Summary, Container, Heading, Title, Content, Button } from 'Styles/blog.style';
+import { Button, Container, Content, Heading, Summary, Title } from 'Styles/blog.style';
 import { Blogdata } from '../../Data/BlogData';
 import { gsap } from 'gsap/dist/gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';

@@ -1,5 +1,5 @@
 import { listIcon } from 'components/Elements/ListIcon';
-import { ListContainer, Container, Info, Title, List, Image } from 'Styles/whyCro.style';
+import { Container, Image, Info, List, ListContainer, Title } from 'Styles/whyCro.style';
 
 export default function WhyCro() {
   return (

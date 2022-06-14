@@ -4,10 +4,9 @@ import { EnvVars } from 'env';
 import useEscClose from 'hooks/useEscKey';
 import CloseIcon from '../Icons/CloseIcon';
 import Container from '../Elements/Container';
-
 import MailSentState from '../MailSentState';
 import Overlay from '../Elements/Overlay';
-import { CloseIconContainer, Card, Title, Row, CustomInput, CustomButton, ErrorMessage } from 'Styles/newsLetterModal.style';
+import { Card, CloseIconContainer, CustomButton, CustomInput, ErrorMessage, Row, Title } from 'Styles/newsLetterModal.style';
 
 export interface NewsletterModalProps {
   onClose: () => void;

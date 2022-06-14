@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import { Wrapper, PriceContainer, Price, CustomRichText, CustomButton, Title, Description } from 'Styles/pricingCard.style';
+import { CustomButton, CustomRichText, Description, Price, PriceContainer, Title, Wrapper } from 'Styles/pricingCard.style';
 
 interface PricingCardProps {
   title: string;

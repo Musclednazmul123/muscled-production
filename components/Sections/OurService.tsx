@@ -3,16 +3,16 @@ import BasicSection from 'components/Sections/BasicSection';
 import { Services } from 'Data/ourServicesData';
 
 import {
-  ServiceDescription,
-  OurServiceContainer,
-  ServiceHead,
-  OurServiceTitle,
   Container,
   Description,
   Itemscontainer,
   ItemsInfo,
-  ItemsInfoTitle,
   ItemsInfoDescription,
+  ItemsInfoTitle,
+  OurServiceContainer,
+  OurServiceTitle,
+  ServiceDescription,
+  ServiceHead,
 } from 'Styles/ourServices.style';
 
 export default function OurService() {
