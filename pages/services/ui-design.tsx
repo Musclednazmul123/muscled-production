@@ -6,7 +6,7 @@ import PackageSection from 'components/Sections/PackageSection';
 import Plugins from 'components/Sections/Plugins';
 import Slider from 'components/Sections/Slider';
 import Worked from 'components/Sections/Worked';
-import { heroData, iconData, FeaturesData } from 'Data/uiDesign.data';
+import { FeaturesData, heroData, iconData } from 'Data/uiDesign.data';
 import { Container } from 'Styles/uiDesign.style';
 import FeaturesGallery from 'components/Sections/FeaturesGallery';
 

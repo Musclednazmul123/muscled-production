@@ -1,6 +1,6 @@
 import GuideCard from 'components/Cards/GuideCard';
 import React from 'react';
-import { Guides, Container, Title } from 'Styles/guidesSection.style';
+import { Container, Guides, Title } from 'Styles/guidesSection.style';
 import { guideData } from '../../Data/guideData';
 
 export default function GuidesSection() {

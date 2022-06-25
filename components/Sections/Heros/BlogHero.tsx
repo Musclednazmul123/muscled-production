@@ -1,5 +1,5 @@
 import React from 'react';
-import { BgImg, Info, Container, Title, SubTitle, Button } from 'Styles/blogHero.style';
+import { BgImg, Button, Container, Info, SubTitle, Title } from 'Styles/blogHero.style';
 
 const bgimg = '/grid-icons/BlogPageBanner.svg';
 

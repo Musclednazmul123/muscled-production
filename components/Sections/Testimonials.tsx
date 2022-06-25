@@ -4,17 +4,17 @@ import { A11y, Autoplay, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { TESTIMONIALS } from 'Data/testimonialsData';
 import {
-  TestimonialsWrapper,
-  TestimonialCard,
   AuthorContainer,
-  AuthorImageContainer,
   AuthorContent,
-  Content,
+  AuthorImageContainer,
   AuthorName,
   AuthorTitle,
-  Title,
+  Content,
   Description,
   Heading,
+  TestimonialCard,
+  TestimonialsWrapper,
+  Title,
 } from 'Styles/testimonials.style';
 
 type PropsI = {

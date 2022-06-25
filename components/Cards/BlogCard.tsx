@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { SubTitle, Author, AuthorInfo, Name, Summary, Thumbnail, Heading, Description, Image, Info, Title } from 'Styles/blogCard.style';
+import { Author, AuthorInfo, Description, Heading, Image, Info, Name, SubTitle, Summary, Thumbnail, Title } from 'Styles/blogCard.style';
 import { Container } from 'Styles/ourWorkCard.style';
 
 type Props = {

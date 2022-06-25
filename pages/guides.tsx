@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { range } from 'lodash';
 import GuideCard from 'components/Cards/GuideCard';
 import { guideData } from '../Data/guideData';
 
-import { Title, SubTitle, Container, Info, CardsContainer, Pagination, Page } from 'Styles/guides.style';
+import { CardsContainer, Container, Info, Page, Pagination, SubTitle, Title } from 'Styles/guides.style';
 
 const data = guideData;
 

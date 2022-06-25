@@ -1,6 +1,6 @@
 import BlogCard from 'components/Cards/BlogCard';
 import * as React from 'react';
-import { Summary, Container, Heading, Title, Content, Button } from 'Styles/blog.style';
+import { Button, Container, Content, Heading, Summary, Title } from 'Styles/blog.style';
 import { Blogdata } from '../../Data/BlogData';
 import { gsap } from 'gsap/dist/gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -10,21 +10,21 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Blog() {
   const Data = Blogdata.slice(0, 6);
 
-  React.useEffect(() => {
-    ScrollTrigger.batch('.blog-card-container', {
-      interval: 0.2,
-      batchMax: 3,
-      start: 'top 95%',
-      end: 'center 5%',
+  // React.useEffect(() => {
+  //   ScrollTrigger.batch('.blog-card-container', {
+  //     interval: 0.2,
+  //     batchMax: 3,
+  //     start: 'top 95%',
+  //     end: 'center 5%',
 
-      onEnter: (batch: any) => {
-        gsap.from(batch, { x: 250, duration: 0.6, opacity: 0.2, stagger: 0.2 });
-      },
-      onEnterBack: (batch: any) => {
-        gsap.from(batch, { x: -250, duration: 0.6, opacity: 0.2, stagger: 0.2 });
-      },
-    });
-  }, []);
+  //     onEnter: (batch: any) => {
+  //       gsap.from(batch, { x: 250, duration: 0.6, opacity: 0.2, stagger: 0.2 });
+  //     },
+  //     onEnterBack: (batch: any) => {
+  //       gsap.from(batch, { x: -250, duration: 0.6, opacity: 0.2, stagger: 0.2 });
+  //     },
+  //   });
+  // }, []);
   return (
     <Container>
       <Heading>

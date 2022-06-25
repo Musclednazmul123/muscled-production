@@ -1,6 +1,6 @@
 import { recentPost } from 'Data/recentPost';
 import React from 'react';
-import { Title, Card, Info, Container } from 'Styles/recentPost.style';
+import { Card, Container, Info, Title } from 'Styles/recentPost.style';
 
 export default function RecentPosts() {
   return (

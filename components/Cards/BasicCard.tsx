@@ -1,6 +1,5 @@
 import NextImage from 'next/image';
-import styled from 'styled-components';
-import { Title, Description } from 'Styles/basicCard.style';
+import { Description, Title } from 'Styles/basicCard.style';
 import Card from './Card';
 
 interface BasicCardProps {

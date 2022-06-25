@@ -1,7 +1,7 @@
 import NextImage from 'next/image';
-import React, { PropsWithChildren, ReactNode, useEffect } from 'react';
-import { Wrapper, Image, Content, Child, Title } from 'Styles/basicSection.style';
-import { gsap } from 'gsap/dist/gsap';
+import React, { ReactNode, useEffect } from 'react';
+import { Child, Content, Image, Title, Wrapper } from 'Styles/basicSection.style';
+import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -15,42 +15,42 @@ export interface PropsI {
 }
 
 export default function BasicSection({ imageUrl, title, reversed, children }: PropsI) {
-  useEffect(() => {
-    ScrollTrigger.batch('.basic-section-image', {
-      onEnter: (elements, triggers) => {
-        gsap.fromTo(elements, { opacity: 0, scale: 0, x: -1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
-      },
-      onEnterBack: (elements, triggers) => {
-        gsap.fromTo(elements, { opacity: 0, scale: 0, x: -1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
-      },
-    });
+  // useEffect(() => {
+  //   ScrollTrigger.batch('.basic-section-image', {
+  //     onEnter: (elements, triggers) => {
+  //       gsap.fromTo(elements, { opacity: 0, scale: 0, x: -1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
+  //     },
+  //     onEnterBack: (elements, triggers) => {
+  //       gsap.fromTo(elements, { opacity: 0, scale: 0, x: -1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
+  //     },
+  //   });
 
-    ScrollTrigger.batch('.basic-section-image-rev', {
-      onEnter: (elements, triggers) => {
-        gsap.fromTo(elements, { opacity: 0, scale: 0, x: 1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
-      },
-      onEnterBack: (elements, triggers) => {
-        gsap.fromTo(elements, { opacity: 0, scale: 0, x: 1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
-      },
-    });
-    ScrollTrigger.batch('.basic-section-content', {
-      onEnter: (elements, triggers) => {
-        gsap.fromTo(elements, { opacity: 0, scale: 0, x: 1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
-      },
-      onEnterBack: (elements, triggers) => {
-        gsap.fromTo(elements, { opacity: 0, scale: 0, x: 1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
-      },
-    });
+  //   ScrollTrigger.batch('.basic-section-image-rev', {
+  //     onEnter: (elements, triggers) => {
+  //       gsap.fromTo(elements, { opacity: 0, scale: 0, x: 1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
+  //     },
+  //     onEnterBack: (elements, triggers) => {
+  //       gsap.fromTo(elements, { opacity: 0, scale: 0, x: 1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
+  //     },
+  //   });
+  //   ScrollTrigger.batch('.basic-section-content', {
+  //     onEnter: (elements, triggers) => {
+  //       gsap.fromTo(elements, { opacity: 0, scale: 0, x: 1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
+  //     },
+  //     onEnterBack: (elements, triggers) => {
+  //       gsap.fromTo(elements, { opacity: 0, scale: 0, x: 1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
+  //     },
+  //   });
 
-    ScrollTrigger.batch('.basic-section-content-rev', {
-      onEnter: (elements, triggers) => {
-        gsap.fromTo(elements, { opacity: 0, scale: 0, x: -1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
-      },
-      onEnterBack: (elements, triggers) => {
-        gsap.fromTo(elements, { opacity: 0, scale: 0, x: -1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
-      },
-    });
-  }, []);
+  //   ScrollTrigger.batch('.basic-section-content-rev', {
+  //     onEnter: (elements, triggers) => {
+  //       gsap.fromTo(elements, { opacity: 0, scale: 0, x: -1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
+  //     },
+  //     onEnterBack: (elements, triggers) => {
+  //       gsap.fromTo(elements, { opacity: 0, scale: 0, x: -1000 }, { opacity: 1, duration: 1.3, scale: 1, x: 0, stagger: 0.15 });
+  //     },
+  //   });
+  // }, []);
 
   return (
     <Wrapper reversed={reversed}>

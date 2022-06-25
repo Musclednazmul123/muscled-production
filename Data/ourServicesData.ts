@@ -3,25 +3,25 @@ export const Services = [
       imageUrl: '/grid-icons/asset-9.svg',
       title: 'Design',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error dolorem ipsa dolore facere est consequuntur aut, eos doloribus voluptate?',
+        'We use Figma to create beautiful designs that will make your brand stand out. What we make out of basic shapes will amaze you.',
       items: [
         {
           icon: '/grid-icons/landing-page-icon.svg',
           itemtitle: 'Landing Page Design',
           itemdesc:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris. ',
+            'Need a makeover for one of your product pages? Want to bring some GSAP Animation (Apple/DJI type websites) into your Homepage? Conversion rate slowed down? Let us track the data and follow it with precision using modern tools such as Hotjar and Google Analytics with stateful design.',
         },
         {
           icon: '/grid-icons/icon-wireframe.svg',
-          itemtitle: 'Website and App Wireframing',
+          itemtitle: 'Shopify App Wireframing',
           itemdesc:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris',
+            'Got an idea to improve your Shopify store processes that will give you an edge against your competitors? We\'ve recently serviced a company with a dynamic pricing Shopify app. ',
         },
         {
           icon: '/grid-icons/icon-ui.svg',
           itemtitle: 'UI / UX Design',
           itemdesc:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris.',
+            'Got an idea for a project with multi state design and 20+ pages? Let\'s discuss your project in detail.',
         },
       ],
     },
@@ -29,25 +29,25 @@ export const Services = [
       imageUrl: '/grid-icons/asset-3.svg',
       title: 'E-Commerce',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris. Felis augue vitae vitae.',
+        'We turn Figma User Interface Designs into rockstar high converting Shopify pages. Let\'s go on a 15 minute call to discuss if we are the right fit!',
       items: [
         {
           icon: '/grid-icons/landing-page-icon.svg',
           itemtitle: 'Conversion Rate Optimization (CRO)',
           itemdesc:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris. ',
+            'Need multiple changes in various parts of your homepage, sales pages, product pages, third-party app powered pages? We\'re here to serve. Let\'s go on a call to discuss your ongoing Shopify store management in detail.',
         },
         {
           icon: '/grid-icons/landing-page-icon.svg',
-          itemtitle: 'Landing Page Design',
+          itemtitle: 'Shopify Theme Development',
           itemdesc:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris. ',
+            'Provide us a Figma design or we can handle that digital workout for you. Then we use Liquid to make calls to the Shopify API to build highly performant sections and widgets for various pages of your Shopify store.',
         },
         {
           icon: '/grid-icons/icon-wireframe.svg',
-          itemtitle: 'Website and App Wireframing',
+          itemtitle: 'Shopify App Development',
           itemdesc:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris',
+            'We build Shopify apps by connecting Shopify\'s front end development technology, Liquid, with various back-end technolgoies such as Node, Express, Nest, Python, C#, Java, etc.',
         },
         {
           icon: '/grid-icons/icon-ui.svg',

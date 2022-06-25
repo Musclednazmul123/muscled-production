@@ -26,9 +26,9 @@ export default function Content(props: PropsI) {
   );
 
   const element =
-    tag == 'break'
+    tag === 'break'
       ? breakTag
-      : tag == 'img'
+      : tag === 'img'
       ? React.createElement(tag, { className: className, src: media })
       : React.createElement(tag, { className: className }, content);
 

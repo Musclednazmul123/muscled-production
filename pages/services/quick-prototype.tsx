@@ -6,7 +6,7 @@ import OurTechnology from 'components/Sections/OurTechnology';
 import PackageSection from 'components/Sections/PackageSection';
 import Slider from 'components/Sections/Slider';
 import Worked from 'components/Sections/Worked';
-import { iconData, FeaturesData } from 'Data/EcommercePageData';
+import { FeaturesData, iconData } from 'Data/EcommercePageData';
 import { heroData } from 'Data/quickPrototypeData';
 import styled from 'styled-components';
 import FeaturesGallery from 'components/Sections/FeaturesGallery';

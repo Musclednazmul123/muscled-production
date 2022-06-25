@@ -1,6 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Author, Container, CardBody, CTA, Info, Date, Title, Arrow } from 'Styles/ourStory.style';
+import { Arrow, Author, CardBody, Container, CTA, Date, Info, Title } from 'Styles/ourStory.style';
 
 export default function OurStory() {
   const arrow = '/grid-icons/ourStoryArrow.svg';

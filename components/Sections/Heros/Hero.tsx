@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Container, Date } from 'Styles/hero.style';
 
 export default function BlogHero(props: any) {

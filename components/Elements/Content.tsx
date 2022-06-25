@@ -14,11 +14,11 @@ type PropsI = {
   ];
 };
 
-export default function BlogContent(props: PropsI) {
+export default function BlogContent(props: { data: any; }) {
   const { data } = props;
   return (
     <Container>
-      {data.map((content, index) => (
+      {data.map((content: { tag: string; className: string; content: string; media: string; }, index: string) => (
         <Elements
           key={'blog-data-' + index}
           tag={content.tag}

@@ -1,4 +1,4 @@
-import { Container, Info, Button } from 'Styles/card.style';
+import { Button, Container, Info } from 'Styles/card.style';
 
 export default function Card(props: any) {
   return (

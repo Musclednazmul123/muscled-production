@@ -1,6 +1,4 @@
-import { CroMethodsIcon } from 'components/Elements/CroMethodsIcon';
-import styled from 'styled-components';
-import { ItemContainer2, Container, TitleWrapper, ItemContainer, Item2, Item } from 'Styles/croMethodes.style';
+import { Container, Item, Item2, ItemContainer, ItemContainer2, TitleWrapper } from 'Styles/croMethodes.style';
 
 export default function CroMethods() {
   return (

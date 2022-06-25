@@ -1,5 +1,5 @@
 import ButtonGroup from 'components/Buttons/ButtonGroup';
-import SectionTitle from 'components/Elements/SectionTitle';
+import SectionTitle from './SectionTitle';
 import styled from 'styled-components';
 import Button from 'components/Buttons/Button';
 import { media } from 'utils/media';

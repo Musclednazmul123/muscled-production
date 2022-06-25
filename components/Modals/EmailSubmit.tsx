@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, Email, Heading, Form, Button, Summary } from 'Styles/emailSubmit.style';
+import { Button, Email, Form, Heading, Input, Summary } from 'Styles/emailSubmit.style';
 
 export default function EmailSubmit() {
   return (

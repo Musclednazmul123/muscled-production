@@ -1,5 +1,5 @@
 import { PropsWithChildren, useState } from 'react';
-import { AccordionWrapper, TitleWrapper, Icon, Title, Description } from 'Styles/accordion.style';
+import { AccordionWrapper, Description, Icon, Title, TitleWrapper } from 'Styles/accordion.style';
 import Collapse from '../Icons/Collapse';
 import RichText from '../../Styles/RichText';
 

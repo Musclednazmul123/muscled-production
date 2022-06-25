@@ -5,7 +5,7 @@ import ButtonGroup from 'components/Buttons/ButtonGroup';
 import Container from 'components/Elements/Container';
 import OverTitle from 'components/Elements/OverTitle';
 import SectionTitle from 'Styles/SectionTitle';
-import { CtaWrapper, Stack, Description, OutlinedButton } from 'Styles/cta.style';
+import { CtaWrapper, Description, OutlinedButton, Stack } from 'Styles/cta.style';
 
 export default function Cta() {
   return (

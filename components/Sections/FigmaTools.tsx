@@ -1,5 +1,5 @@
 import IconCard from 'components/Cards/IconCard';
-import { Icons, Container } from 'Styles/figmaTools.style';
+import { Container, Icons } from 'Styles/figmaTools.style';
 
 export default function FigmaTools(props: any) {
   return (

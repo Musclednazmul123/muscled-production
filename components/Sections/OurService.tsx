@@ -3,16 +3,16 @@ import BasicSection from 'components/Sections/BasicSection';
 import { Services } from 'Data/ourServicesData';
 
 import {
-  ServiceDescription,
-  OurServiceContainer,
-  ServiceHead,
-  OurServiceTitle,
   Container,
   Description,
   Itemscontainer,
   ItemsInfo,
-  ItemsInfoTitle,
   ItemsInfoDescription,
+  ItemsInfoTitle,
+  OurServiceContainer,
+  OurServiceTitle,
+  ServiceDescription,
+  ServiceHead,
 } from 'Styles/ourServices.style';
 
 export default function OurService() {
@@ -21,8 +21,7 @@ export default function OurService() {
       <ServiceHead>
         <OurServiceTitle className="serviceText">Our Services</OurServiceTitle>
         <ServiceDescription className="serviceText">
-          Keeping up with the changing needs of your customers is very critical to the success of your organization. You need an up-to-date
-          solution that provides value. MUSCLED puts your business through digital workouts that align with modern and trendy practices.
+          We provide Shopify services from theme audits, revisions and custom development to shopify app devleopment and Shopify branding through Paid Ads, SEO and Influencer Marketing. 
         </ServiceDescription>
       </ServiceHead>
       {Services.map((singleService, index) => (

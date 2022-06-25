@@ -2,9 +2,13 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  position: relative;
+  // position: relative;
   height: 600px;
   overflow: hidden;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important ;
+  // background-color: red !important;
 `;
 
 export const Description = styled.p`
@@ -14,12 +18,12 @@ export const Description = styled.p`
 `;
 
 export const Body = styled.div`
-  position: absolute;
+  // position: absolute;
   max-width: 130rem;
   height: 560px;
   display: flex;
   margin: auto;
-  left: calc(50% - 130rem / 2);
+  // left: calc(50% - 130rem / 2);
   padding: 10px;
   justify-content: space-between;
   gap: 80px;
@@ -75,14 +79,14 @@ export const Media = styled.img`
   object-fit: contain;
 `;
 
-export const Background = styled.div`
-  position: absolute;
-  height: 100%;
-  background-repeat: no-repeat !important;
-  background-size: 100% !important;
-  background-position: center !important ;
-  width: 100%;
-  top: 0 !important;
-  z-index: -1;
-  left: 0;
-`;
+// export const Background = styled.div`
+//   position: absolute;
+//   height: 100%;
+//   background-repeat: no-repeat !important;
+//   background-size: 100% !important;
+//   background-position: center !important ;
+//   width: 100%;
+//   top: 0 !important;
+//   z-index: -1;
+//   left: 0;
+// `;

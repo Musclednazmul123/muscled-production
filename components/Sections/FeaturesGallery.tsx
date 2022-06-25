@@ -1,23 +1,19 @@
 import NextImage from 'next/image';
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import Collapse from 'components/Icons/Collapse';
-import Container from 'components/Elements/Container';
-import OverTitle from 'components/Elements/OverTitle';
+
 // import SectionTitle from 'components/Elements/SectionTitle';
-import ThreeLayersCircle from 'components/ThreeLayersCircle';
-import { media } from 'utils/media';
 import {
+  CircleContainer,
+  Content,
+  FeaturesGalleryWrapper,
+  GalleryWrapper,
   ImageContainer,
   Tab,
-  TabTitleContainer,
-  CircleContainer,
   TabContent,
-  FeaturesGalleryWrapper,
-  Content,
-  Title,
-  GalleryWrapper,
   TabsContainer,
+  TabTitleContainer,
+  Title,
 } from 'Styles/featuresGallery.style';
 
 export default function FeaturesGallery(props: any) {

@@ -1,4 +1,4 @@
-import { UL, LI, Container, Info, Title, Button, Media, Description } from 'Styles/banner2.style';
+import { Button, Container, Description, Info, LI, Media, Title, UL } from 'Styles/banner2.style';
 
 type PropsI = {
   background: string;

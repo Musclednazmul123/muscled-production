@@ -1,9 +1,7 @@
-import styled from 'styled-components';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { range } from 'lodash';
 import Card from 'components/Cards/Card';
-import a from 'next/link';
-import { Tabs, Container, Info, Title, Tab, CardsContainer, Pagination, PageNum } from 'Styles/worked.style';
+import { CardsContainer, Container, Info, PageNum, Pagination, Tab, Tabs, Title } from 'Styles/worked.style';
 import { datas } from 'Data/workedData';
 
 export default function Worked() {

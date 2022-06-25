@@ -8,16 +8,12 @@
     "sourceType": "module"
   },
   "rules": {
+    "@next/next/no-document-import-in-page": "off",
     "react/prop-types": 0,
     "react/react-in-jsx-scope": 0,
     "react/display-name": 0,
     "no-unused-vars": 0,
-    "sort-imports": ["error", { "ignoreCase": false, "ignoreDeclarationSort": false ,
-      "ignoreMemberSort": false,
-      "memberSyntaxSortOrder" : ["none", "all", "multiple", "single"]
-
-      }],
-    
+    "sort-imports": ["error", { "ignoreCase": true, "ignoreDeclarationSort": true }],
     "import/order": [
       1,
       {

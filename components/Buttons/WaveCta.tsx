@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import ButtonGroup from 'components/Buttons/ButtonGroup';
 import Container from 'components/Elements/Container';
-import SectionTitle from 'components/Elements/SectionTitle';
 import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { CtaWrapper, CustomButtonGroup, OutlinedButton, Title } from 'Styles/waveCta.style';
 import { Button } from 'tinacms';

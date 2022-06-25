@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, Description, Container, Info, Img } from 'Styles/serviceCard.style';
+import { Container, Description, Img, Info, Title } from 'Styles/serviceCard.style';
 
 export default function ServiceCard(props: any) {
   return (
