@@ -7,6 +7,7 @@ import Testimonials from 'components/Sections/Testimonials';
 import OurWork from 'components/Sections/OurWork';
 import Blog from 'components/Sections/Blog';
 import { HomepageWrapper } from 'Styles/index.style';
+import WebDevelopmentServices from 'components/Sections/WebDevelopmentServices';
 
 export default function Homepage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
@@ -14,6 +15,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
       <MainHero />
       <Partners />
       <OurService />
+      <WebDevelopmentServices />
       <OurWork />
       <Blog />
       <Testimonials />

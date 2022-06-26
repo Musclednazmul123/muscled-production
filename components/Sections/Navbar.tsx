@@ -23,6 +23,7 @@ import {
   NavItemWrapper,
   SubMenu,
 } from 'Styles/navBar.style';
+import { ScheduleCall } from './Schedule/ScheduleCall';
 
 const ColorSwitcher = dynamic(() => import('../Buttons/ColorSwitcher'), { ssr: false });
 
@@ -188,7 +189,7 @@ export default function Navbar({ items }: NavbarProps) {
             </MenuContainer>
           ))}
         </NavItemList>
-        <Btn>Schedule a Call</Btn>
+        <Btn><ScheduleCall /></Btn>
         <ColorSwitcherContainer>
           <ColorSwitcher />
         </ColorSwitcherContainer>

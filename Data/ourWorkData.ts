@@ -8,7 +8,7 @@ export const OurWorkTabs = [
         id:uuidv4(),
         workTitle: 'tab-1-Ultricies id consectetur quis tellus nulla magna.',
         workImg: '/grid-icons/asset-1.svg',
-        workCategory: 'Web App Development',
+        workCategory: 'Shopify Store Development',
         workDate: '27th May, 2022',
       },
       {

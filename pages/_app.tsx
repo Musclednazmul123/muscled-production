@@ -17,8 +17,7 @@ import NewsletterModal from 'components/Modals/NewsletterModal';
 import Script from 'next/script';
 import { NewsletterModalContextProvider, useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { NavItems } from 'types';
-// import Header from 'views/HomePage/Header';
-import { PopupWidget } from "react-calendly";
+
 
 const navItems: NavItems = [
   { title: 'Awesome SaaS Features', href: '/features' },
@@ -74,17 +73,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Footer />
       </Providers>
 
-    {typeof window !== 'undefined'? <PopupWidget
-      url="https://calendly.com/muscled/"
-      /*
-       * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
-       * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
-       */
-      rootElement={document.getElementById("__next")!}//document selector
-      text="Schedule a call!"
-      textColor="#ffffff"
-      color="#00a2ff"
-    />:""}
+      {/*  */}
+
       <Script
         id="my-script-functions"
         dangerouslySetInnerHTML={{

@@ -30,6 +30,16 @@ export const Contents = styled.div`
 
 export const CustomButtonGroup = styled(ButtonGroup)`
   margin-top: 4rem;
+  button{
+    padding: 15px 40px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #1672FF;
+    border: 0px;
+    color: white;
+    border-radius: 10px;
+  }
+  
 `;
 
 export const ImageContainer = styled.div`

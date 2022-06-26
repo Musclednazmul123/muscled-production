@@ -15,7 +15,7 @@ export const Services = [
           icon: '/grid-icons/icon-wireframe.svg',
           itemtitle: 'Shopify App Wireframing',
           itemdesc:
-            'Got an idea to improve your Shopify store processes that will give you an edge against your competitors? We\'ve recently serviced a company with a dynamic pricing Shopify app. ',
+            'Got an idea to improve your Shopify store processes that will give you an edge against your competitors? We\'ve recently serviced a company with a dynamic pricing custom Shopify app. ',
         },
         {
           icon: '/grid-icons/icon-ui.svg',
@@ -31,6 +31,12 @@ export const Services = [
       description:
         'We turn Figma User Interface Designs into rockstar high converting Shopify pages. Let\'s go on a 15 minute call to discuss if we are the right fit!',
       items: [
+        {
+          icon: '/grid-icons/landing-page-icon.svg',
+          itemtitle: 'Shopify Features and Tasks',
+          itemdesc:
+            'Break down your Shopify store development and overall business into features and tasks that need to work and perform together. Tasks can be ran by human or automated software. Optimize your business  to the fullest.',
+        },
         {
           icon: '/grid-icons/landing-page-icon.svg',
           itemtitle: 'Conversion Rate Optimization (CRO)',
@@ -51,37 +57,11 @@ export const Services = [
         },
         {
           icon: '/grid-icons/icon-ui.svg',
-          itemtitle: 'UI / UX Design',
+          itemtitle: 'Shopify Store Development (No Design Required)',
           itemdesc:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris.',
+            'Skip the design, show us your competitors, tell us about your brand and let us get to work! You\'ll like what we come up with, 100% Money Back Guarantee.',
         },
       ],
-    },
-    {
-      imageUrl: '/grid-icons/asset-1.svg',
-      title: 'Web App Development',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris. Felis augue vitae vitae.',
-      items: [
-        {
-          icon: '/grid-icons/landing-page-icon.svg',
-          itemtitle: 'Landing Page Design',
-          itemdesc:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris. ',
-        },
-        {
-          icon: '/grid-icons/icon-wireframe.svg',
-          itemtitle: 'Website and App Wireframing',
-          itemdesc:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris',
-        },
-        {
-          icon: '/grid-icons/icon-ui.svg',
-          itemtitle: 'UI / UX Design',
-          itemdesc:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dui nec turpis id amet. Odio etiam erat faucibus orci quis enim, mauris.',
-        },
-      ],
-    },
+    }
   ];
   

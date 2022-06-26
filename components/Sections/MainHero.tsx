@@ -7,6 +7,7 @@ import { Contents, CustomButtonGroup, CustomOverTitle, Description, Heading, Her
 import { gsap } from 'gsap/dist/gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useRouter } from 'next/router';
+import { ScheduleCall } from './Schedule/ScheduleCall';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -82,11 +83,15 @@ export default function Hero() {
         {/* <EmailSubmit /> */}
 
         <CustomButtonGroup>
-          {heroData.Buttons.map((button, index) => (
+          
+        <ScheduleCall />
+
+
+          {/* {heroData.Buttons.map((button, index) => (
             <Button key={'hero-button' + index} onClick={() => setIsModalOpened(true)} transparent={button.transparent}>
               {button.name} <span>&rarr;</span>
             </Button>
-          ))}
+          ))} */}
         </CustomButtonGroup>
       </Contents>
       <ImageContainer className={'heroMedia'}>
