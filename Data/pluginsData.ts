@@ -3,31 +3,15 @@ export const plugins = [
       title: 'Figma Plugins We Love',
       icons: [
         {
-          name: 'Lottie Files',
+          name: 'Unsplash',
           icon: '/grid-icons/asset-1.svg',
         },
         {
-          name: 'Lottie Files',
+          name: 'Remove BG',
           icon: '/grid-icons/asset-1.svg',
         },
         {
-          name: 'Lottie Files',
-          icon: '/grid-icons/asset-1.svg',
-        },
-        {
-          name: 'Lottie Files',
-          icon: '/grid-icons/asset-1.svg',
-        },
-        {
-          name: 'Lottie Files',
-          icon: '/grid-icons/asset-1.svg',
-        },
-        {
-          name: 'Lottie Files',
-          icon: '/grid-icons/asset-1.svg',
-        },
-        {
-          name: 'Lottie Files',
+          name: 'Font Preview',
           icon: '/grid-icons/asset-1.svg',
         },
         {

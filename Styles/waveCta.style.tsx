@@ -27,3 +27,14 @@ export const OutlinedButton = styled(Button)`
 export const CustomButtonGroup = styled(ButtonGroup)`
   justify-content: center;
 `;
+
+export const ScheduleCallBtn = styled.div`
+button{
+  font-size: 14px;
+  border: 0;
+  background-color: #1672FF;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 40px;
+}
+`

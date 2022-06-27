@@ -28,9 +28,9 @@ export default function UiDesign() {
       <FeaturesGallery data={FeaturesData[0]} />
       <OurTechnology />
       <Worked />
-      <PackageSection />
-      <Slider />
-      <Newsletter />
+      {/* <PackageSection /> */}
+      {/* <Slider /> */}
+      {/* <Newsletter /> */}
     </Container>
   );
 }

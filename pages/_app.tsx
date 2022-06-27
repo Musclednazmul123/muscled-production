@@ -17,6 +17,7 @@ import NewsletterModal from 'components/Modals/NewsletterModal';
 import Script from 'next/script';
 import { NewsletterModalContextProvider, useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { NavItems } from 'types';
+import WaveCta from 'components/Buttons/WaveCta';
 
 
 const navItems: NavItems = [
@@ -69,11 +70,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         >
           <Component {...pageProps} />
         </TinaEditProvider>
-        {/* <WaveCta /> */}
+        <WaveCta />
         <Footer />
       </Providers>
-
-      {/*  */}
 
       <Script
         id="my-script-functions"

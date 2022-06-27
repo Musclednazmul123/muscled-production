@@ -1,6 +1,6 @@
 export const Services = [
     {
-      imageUrl: '/grid-icons/asset-9.svg',
+      imageUrl: '/services-media/shopify-services.png',
       title: 'Design',
       description:
         'We use Figma to create beautiful designs that will make your brand stand out. What we make out of basic shapes will amaze you.',
@@ -26,7 +26,7 @@ export const Services = [
       ],
     },
     {
-      imageUrl: '/grid-icons/asset-3.svg',
+      imageUrl: '/services-media/digital-marketing.png',
       title: 'E-Commerce',
       description:
         'We turn Figma User Interface Designs into rockstar high converting Shopify pages. Let\'s go on a 15 minute call to discuss if we are the right fit!',

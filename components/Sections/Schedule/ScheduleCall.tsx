@@ -2,7 +2,7 @@ import { PopupButton } from "react-calendly";
 
 export function ScheduleCall(){
     return(
-        <>{typeof window !== 'undefined'?
+        <div>{typeof window !== 'undefined'?
         <PopupButton
           url="https://calendly.com/muscled/"
           /*
@@ -11,6 +11,6 @@ export function ScheduleCall(){
            */
           rootElement={document.getElementById("__next")!}
           text="schedule a call"
-        />:""}</>
+        />:""}</div>
     )
 }

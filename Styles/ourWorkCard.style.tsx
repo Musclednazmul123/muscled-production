@@ -6,6 +6,11 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 20px;
   padding: 20px;
+  img{
+    height: 240px;
+
+
+  }
 `;
 
 export const CardTitle = styled.h3`

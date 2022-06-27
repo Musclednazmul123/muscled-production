@@ -21,6 +21,7 @@ import {
   NavbarContainer,
   NavItemList,
   NavItemWrapper,
+  ScheduleBtn,
   SubMenu,
 } from 'Styles/navBar.style';
 import { ScheduleCall } from './Schedule/ScheduleCall';
@@ -189,7 +190,7 @@ export default function Navbar({ items }: NavbarProps) {
             </MenuContainer>
           ))}
         </NavItemList>
-        <Btn><ScheduleCall /></Btn>
+        <ScheduleBtn><ScheduleCall /></ScheduleBtn>
         <ColorSwitcherContainer>
           <ColorSwitcher />
         </ColorSwitcherContainer>

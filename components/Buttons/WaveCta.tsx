@@ -4,8 +4,9 @@ import styled from 'styled-components';
 import ButtonGroup from 'components/Buttons/ButtonGroup';
 import Container from 'components/Elements/Container';
 import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
-import { CtaWrapper, CustomButtonGroup, OutlinedButton, Title } from 'Styles/waveCta.style';
+import { CtaWrapper, CustomButtonGroup, OutlinedButton, ScheduleCallBtn, Title } from 'Styles/waveCta.style';
 import { Button } from 'tinacms';
+import { ScheduleCall } from 'components/Sections/Schedule/ScheduleCall';
 
 export default function WaveCta() {
   const { setIsModalOpened } = useNewsletterModalContext();
@@ -21,16 +22,16 @@ export default function WaveCta() {
       </svg>
       <CtaWrapper>
         <Container>
-          <Title>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus delectus?</Title>
+          <Title>Need Shopify Development or Paid Advertising services? Let's get in touch.</Title>
           <CustomButtonGroup>
-            <Button onClick={() => setIsModalOpened(true)}>
-              Subscribe to the newsletter <span>&rarr;</span>
-            </Button>
-            <NextLink href="/features" passHref>
+            <ScheduleCallBtn>
+              <ScheduleCall />
+            </ScheduleCallBtn>
+            {/* <NextLink href="/features" passHref>
               <OutlinedButton transparent>
                 Features <span>&rarr;</span>
               </OutlinedButton>
-            </NextLink>
+            </NextLink> */}
           </CustomButtonGroup>
         </Container>
       </CtaWrapper>

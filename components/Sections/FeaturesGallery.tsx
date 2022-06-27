@@ -25,7 +25,7 @@ export default function FeaturesGallery(props: any) {
 
     return (
       <ImageContainer key={singleTab.title} isActive={isActive}>
-        <NextImage src={singleTab.imageUrl} alt={singleTab.title} layout="fill" objectFit="contain" priority={isFirst} />
+        <NextImage src={singleTab.imageUrl} alt={singleTab.title} layout="fill" objectFit="cover" sizes='100%' priority={isFirst} />
       </ImageContainer>
     );
   });

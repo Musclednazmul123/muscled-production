@@ -6,40 +6,30 @@ export default function FaqSection() {
   return (
     <Wrapper>
       <SectionTitle>Frequently asked question</SectionTitle>
-      <Accordion title="Eiusmod eu laboris qui minim incididunt et id in elit veniam Lorem nulla ullamco.">
-        Voluptate ad aliquip in adipisicing incididunt officia. Aliqua consectetur id commodo fugiat sunt dolor minim. Aliqua ut deserunt
-        sit irure tempor esse labore elit commodo pariatur in nisi minim culpa. Exercitation eu in mollit tempor cillum excepteur
-        adipisicing cillum do et dolor est deserunt dolor. Deserunt reprehenderit nulla commodo quis et consectetur deserunt ea eiusmod
-        reprehenderit aliqua. Cupidatat commodo do ad ullamco ad enim sint sint irure amet culpa. Consequat sit Lorem sint culpa.
+      <Accordion title="What kind of clients do you work with?">
+        We work with businesses of all size, mainly small and medium businesses (SMBs). No matter how big our client, the fundamentals remain the same: Define the problem, measure, analyze, improve and control. We apply this approach with software development and digital advertising and search engine optimization.
       </Accordion>
-      <Accordion title="Minim eiusmod aliquip in ea mollit fugiat ullamco veniam enim sint exercitation.">
-        Lorem laboris ullamco labore consectetur duis amet excepteur esse labore sunt pariatur do aliqua amet. Enim exercitation labore
-        nostrud consectetur veniam eiusmod pariatur do commodo dolore pariatur amet veniam. Irure do et ut dolor quis reprehenderit anim
-        aute sint deserunt tempor sunt nostrud. Deserunt et aute non dolor.
+      <Accordion title="What makes Muscled stand out from other service providers?">
+        Our relentless effort to stay ahead of all the new and exciting features that Shopify releases every few months. Shopify is a high growth company and it is working hard to cement its dominance in the E-Commerce world through acquiring fullfillment companies, allowing app developers more access and tools to create functionalities that weren't possible before. The point is, Shopify is constantly releasing new features and Muscled stays up to date with all of its best practices.
       </Accordion>
-      <Accordion title="Commodo officia dolore anim occaecat.">
-        Enim ea cillum pariatur incididunt incididunt sunt ea exercitation nisi aliquip. Cillum deserunt ut esse Lorem non qui labore labore
-        eiusmod magna incididunt ut quis. Nulla excepteur adipisicing ipsum do non occaecat.
+      <Accordion title="What can I expect as a client when working with Muscled?">
+        All clients are connected to a member from the Client Success Team who is the liaison between the Design, Dev and DevOps Team.
       </Accordion>
-      <Accordion title="Irure Lorem proident esse enim.">
-        Ipsum laboris sit minim occaecat nisi qui. Tempor eiusmod fugiat occaecat labore. Exercitation do cillum cillum laborum velit
-        laborum ea magna duis laborum in anim. Enim laboris dolore laboris consectetur enim duis deserunt consequat excepteur ipsum
-        excepteur. Non dolor magna et est cillum sint eiusmod sit eiusmod veniam id. Aliqua non non labore amet laborum fugiat ad nostrud ex
-        officia exercitation.
+      <Accordion title="How can I be a great client?">
+        Depending on the service we are providing, you can always be a great client by reading our valuable and informative guides or taking our course that will help you not only deal better with us but with other professionals in the tech and digital marketing industry.
       </Accordion>
-      <Accordion title="Ea quis consequat sunt sint aute pariatur aliquip minim voluptate.">
-        Sint eiusmod aute nulla ut esse sunt fugiat nulla exercitation duis pariatur. Magna anim incididunt magna id quis irure laborum sint
-        voluptate tempor esse elit dolore. Elit exercitation pariatur adipisicing aute. Nisi deserunt enim consequat anim adipisicing
-        laborum sint occaecat elit. Consequat officia cupidatat magna incididunt nisi in sunt duis reprehenderit ullamco in amet cillum.
-        Dolor nisi proident ipsum aute velit aliquip magna fugiat reprehenderit. Enim ex aliqua et velit exercitation reprehenderit veniam
-        do eu exercitation ad duis.
+      <Accordion title="What is your 100% Money Back Guarantee about?">
+        As you may have guessed it, we provide you with 100% refund if we do not fulfill what we promised to you. We want to make sure you have a positive experience when working with Muscled and we back our process 100%. Because of our confidence in our process, we are positive we will provide you with a rewarding experience at the Muscled Digital Gym!
       </Accordion>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
-  margin-top: 15rem;
+  width: 100%;
+  max-width: 130rem;
+  padding: 20px; 
+  margin: 15rem auto;
   & > *:not(:first-child) {
     margin-top: 3rem;
   }

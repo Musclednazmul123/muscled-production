@@ -45,7 +45,7 @@ export const heroData = [
           title: 'Discovery',
           description:
             '<p>We go on a call and understand your business and industry/niche at a deep level. Chances are very high that we have already worked in your industry and know the ins-and-outs of it. We will fill out the Muscled UI Design Workbook, which will consist of questions related to the business, tech and marketing aspects of your online presence.</p>',
-          imageUrl: '/demo-illustration-3.png',
+          imageUrl: '/services-media/design.jpg',
           baseColor: '249,82,120',
           secondColor: '221,9,57',
         },

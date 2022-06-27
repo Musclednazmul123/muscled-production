@@ -11,7 +11,7 @@ export default function ServiceDetailsPage() {
       <MainHero />
       <OurWork />
       <Cro />
-      <Blog />
+      {/* <Blog /> */}
     </Container>
   );
 }

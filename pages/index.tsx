@@ -8,6 +8,7 @@ import OurWork from 'components/Sections/OurWork';
 import Blog from 'components/Sections/Blog';
 import { HomepageWrapper } from 'Styles/index.style';
 import WebDevelopmentServices from 'components/Sections/WebDevelopmentServices';
+import FaqSection from 'views/PricingPage/FaqSection';
 
 export default function Homepage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
@@ -15,10 +16,11 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
       <MainHero />
       <Partners />
       <OurService />
-      <WebDevelopmentServices />
+      {/* <WebDevelopmentServices /> */}
       <OurWork />
-      <Blog />
-      <Testimonials />
+      {/* <Blog /> */}
+      {/* <Testimonials /> */}
+      <FaqSection />
     </HomepageWrapper>
   );
 }

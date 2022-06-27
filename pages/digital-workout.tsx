@@ -11,7 +11,7 @@ export default function DigitalWorkoutPage() {
       <MainHero />
       {/* <FeaturesGallery /> */}
       <ServiceType />
-      <Blog />
+      {/* <Blog /> */}
     </Container>
   );
 }

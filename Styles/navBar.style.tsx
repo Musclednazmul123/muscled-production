@@ -42,7 +42,17 @@ export const CustomButton = styled(Button)`
   line-height: 1.8;
 `;
 
-export const Btn = styled.div`
+export const Btn = styled.button`
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+`;
+
+export const ScheduleBtn = styled.div`
   button{
     padding: 10px 20px;
     border: 0px;
